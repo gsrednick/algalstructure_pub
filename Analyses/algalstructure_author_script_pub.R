@@ -22,20 +22,20 @@ library(ggrepel)
 
 # data import 
 # full MLR datasets with fish
-MLR_data<-read.csv("/Users/icarus2/Documents/Software/R/Tidy Workshop/Git/algalstructure/Analyses/submitted_file/Data_for_pub/MLR_data_updated.csv")
+MLR_data<-read.csv("/Users/icarus2/Documents/Software/R/Tidy Workshop/Git/algalstructure_pub/Data_for_pub/MLR_data_updated.csv")
 
-allspp_data<-read.csv("/Users/icarus2/Documents/Software/R/Tidy Workshop/Git/algalstructure/Analyses/submitted_file/Data_for_pub/fish_main_tran.csv")
+allspp_data<-read.csv("/Users/icarus2/Documents/Software/R/Tidy Workshop/Git/algalstructure_pub/Data_for_pub/fish_main_tran.csv")
 
 # Log transform fish densities
 allspp_data_log<-allspp_data %>% 
   mutate_at(c(4:39),funs(log(.+1)))
 
 # algae data
-algae<-read.csv("/Users/icarus2/Documents/Software/R/Tidy Workshop/Git/algalstructure/Analyses/submitted_file/Data_for_pub/algae_density.csv")
+algae<-read.csv("/Users/icarus2/Documents/Software/R/Tidy Workshop/Git/algalstructure_pub/Data_for_pub/algae_density.csv")
 
 MLR_data_ext<-merge(MLR_data,allspp_data_log)
 
-tran_id<-read.csv("/Users/icarus2/Documents/Software/R/Tidy Workshop/Git/algalstructure/Analyses/submitted_file/Data_for_pub/tran_ID.csv")
+tran_id<-read.csv("/Users/icarus2/Documents/Software/R/Tidy Workshop/Git/algalstructure_pub/Data_for_pub/tran_ID.csv")
 
 MLR_data_mod<-merge(tran_id,MLR_data)
 MLR_data_ext_mod<-merge(tran_id,MLR_data_ext)
@@ -49,11 +49,11 @@ algae_sqrt<-sqrt(algae+0.5) # for S. horneri, S. palmeri, S. osmundacea
 algae_log<-log(algae+1) # for M.pyrifera 
 
 # bring new biomass data; merge with MLR and run
-biomass<-read.csv("/Users/icarus2/Documents/Software/R/Tidy Workshop/Git/algalstructure/Analyses/submitted_file/Data_for_pub/biomass.csv")
+biomass<-read.csv("/Users/icarus2/Documents/Software/R/Tidy Workshop/Git/algalstructure_pub/Data_for_pub/biomass.csv")
 
 
 # diversity data
-divers<-read.csv("/Users/icarus2/Documents/Software/R/Tidy Workshop/Git/algalstructure/Analyses/submitted_file/Data_for_pub/diversity.csv")
+divers<-read.csv("/Users/icarus2/Documents/Software/R/Tidy Workshop/Git/algalstructure_pub/Data_for_pub/diversity.csv")
 
 
 MLR_data_mod<-merge(MLR_data_mod,divers)
@@ -222,7 +222,7 @@ FISH2<-dwplot(FISH2_GO_SIG,dot_args = list(size = 5,aes(fill = SIG),colour="blac
         panel.border = element_rect(colour = "black", fill=NA, size=2))+
   scale_x_continuous(limits = c(-1,1))
 
-#ggsave("/Users/icarus2/Documents/Software/R/Tidy Workshop/Git/algalstructure/Figures/Dotplot/new_dots/FISH2_dot.pdf", plot = FISH2, width = 7, height = 6.5)
+#ggsave("/Users/icarus2/Documents/Software/R/Tidy Workshop/Git/algalstructure_pub/Figures/FISH2_dot.pdf", plot = FISH2, width = 7, height = 6.5)
 
 
 
@@ -331,7 +331,7 @@ FISH3_print<-FISH3_ME %>%
   filter(!grepl('Intercept|Site|Tran|Site', term)) %>% 
   filter(!grepl('Residual|Tran_ID', group))
 
-write.csv(FISH3_print,"/Users/icarus2/Documents/Software/R/Tidy Workshop/Git/algalstructure/tables/fish3.csv",row.names = FALSE)
+write.csv(FISH3_print,"/Users/icarus2/Documents/Software/R/Tidy Workshop/Git/algalstructure_pub/Results/Tables/fish3.csv",row.names = FALSE)
 
 # make siginificance column 
 FISH3_GO_SIG<-FISH3_GO %>% mutate(SIG = ifelse(p.value < 0.05, ifelse(estimate > 0, "positive","negative"), "no"))
@@ -368,7 +368,7 @@ FISH3<-dwplot(FISH3_GO_SIG,dot_args = list(size = 5,aes(fill = SIG),colour="blac
   scale_x_continuous(limits = c(-1,1))
 
 
-ggsave("/Users/icarus2/Documents/Software/R/Tidy Workshop/Git/algalstructure/Figures/Dotplot/new_dots/FISH3_dot.pdf", plot = FISH3, width = 7, height = 6.5)
+ggsave("/Users/icarus2/Documents/Software/R/Tidy Workshop/Git/algalstructure_pub/Results/Figures/FISH3_dot.pdf", plot = FISH3, width = 7, height = 6.5)
 
 
 
@@ -487,7 +487,7 @@ SPP_print<-SPP_ME %>%
   filter(!grepl('Intercept|Site|Tran|Site', term)) %>% 
   filter(!grepl('Residual|Tran_ID', group))
 
-write.csv(SPP_print,"/Users/icarus2/Documents/Software/R/Tidy Workshop/Git/algalstructure/tables/spp.csv",row.names = FALSE)
+write.csv(SPP_print,"/Users/icarus2/Documents/Software/R/Tidy Workshop/Git/algalstructure_pub/Results/Tables/spp.csv",row.names = FALSE)
 
 # make siginificance column 
 SPP_GO_SIG<-SPP_GO %>% mutate(SIG = ifelse(p.value < 0.05, ifelse(estimate > 0, "positive","negative"), "no"))
@@ -524,7 +524,7 @@ SPP<-dwplot(SPP_GO_SIG,dot_args = list(size = 5,aes(fill = SIG),colour="black",p
         panel.border = element_rect(colour = "black", fill=NA, size=2))+
   scale_x_continuous(limits = c(-0.5,0.5))
 
-ggsave("/Users/icarus2/Documents/Software/R/Tidy Workshop/Git/algalstructure/Figures/Dotplot/new_dots/SPP_dot_3-29.pdf", plot = SPP, width = 7, height = 6.5)
+ggsave("/Users/icarus2/Documents/Software/R/Tidy Workshop/Git/algalstructure_pub/Results/Figures/SPP_dot.pdf", plot = SPP, width = 7, height = 6.5)
 
 
 
@@ -637,7 +637,7 @@ WC_print<-WC_ME %>%
   filter(!grepl('Intercept|Site|Tran|Site', term)) %>% 
   filter(!grepl('Residual|Tran_ID', group))
 
-write.csv(WC_print,"/Users/icarus2/Documents/Software/R/Tidy Workshop/Git/algalstructure/tables/WC.csv",row.names = FALSE)
+write.csv(WC_print,"/Users/icarus2/Documents/Software/R/Tidy Workshop/Git/algalstructure_pub/Results/Tables/WC.csv",row.names = FALSE)
 
 
 # make siginificance column 
@@ -674,7 +674,7 @@ WC<-dwplot(WC_GO_SIG,dot_args = list(size = 5,aes(fill = SIG),colour="black",pch
         panel.border = element_rect(colour = "black", fill=NA, size=2)) +
   scale_x_continuous(limits = c(-1,2.5))
 
-ggsave("/Users/icarus2/Documents/Software/R/Tidy Workshop/Git/algalstructure/Figures/Dotplot/new_dots/WC_dot.pdf", plot = WC, width = 7, height = 6.5)
+ggsave("/Users/icarus2/Documents/Software/R/Tidy Workshop/Git/algalstructure_pub/Results/Figures/WC_dot.pdf", plot = WC, width = 7, height = 6.5)
 
 
 
@@ -783,7 +783,7 @@ SIZE1_print<-SIZE1_ME %>%
   filter(!grepl('Intercept|Site|Tran|Site', term)) %>% 
   filter(!grepl('Residual|Tran_ID', group))
 
-write.csv(SIZE1_print,"/Users/icarus2/Documents/Software/R/Tidy Workshop/Git/algalstructure/tables/size1.csv",row.names = FALSE)
+write.csv(SIZE1_print,"/Users/icarus2/Documents/Software/R/Tidy Workshop/Git/algalstructure_pub/Results/Tables/size1.csv",row.names = FALSE)
 
 
 # make siginificance column 
@@ -821,7 +821,7 @@ SIZE1<-dwplot(SIZE1_GO_SIG,dot_args = list(size = 5,aes(fill = SIG),colour="blac
         panel.border = element_rect(colour = "black", fill=NA, size=2))#+
   scale_x_continuous(limits = c(-1,1))
 
-ggsave("/Users/icarus2/Documents/Software/R/Tidy Workshop/Git/algalstructure/Figures/Dotplot/new_dots/SIZE1_dot.pdf", plot = SIZE1, width = 7, height = 6.5)
+ggsave("/Users/icarus2/Documents/Software/R/Tidy Workshop/Git/algalstructure_pub/Results/Figures/SIZE1_dot.pdf", plot = SIZE1, width = 7, height = 6.5)
 
 
 
@@ -931,7 +931,7 @@ SIZE2_print<-SIZE2_ME %>%
   filter(!grepl('Intercept|Site|Tran|Site', term)) %>% 
   filter(!grepl('Residual|Tran_ID', group))
 
-write.csv(SIZE2_print,"/Users/icarus2/Documents/Software/R/Tidy Workshop/Git/algalstructure/tables/size2.csv",row.names = FALSE)
+write.csv(SIZE2_print,"/Users/icarus2/Documents/Software/R/Tidy Workshop/Git/algalstructure_pub/Results/Tables/size2.csv",row.names = FALSE)
 
 
 # make siginificance column 
@@ -971,7 +971,7 @@ SIZE2<-dwplot(SIZE2_GO_SIG,
         panel.border = element_rect(colour = "black", fill=NA, size=2))+
   coord_cartesian(x = c(-1,1))
 
-ggsave("/Users/icarus2/Documents/Software/R/Tidy Workshop/Git/algalstructure/Figures/Dotplot/new_dots/SIZE2_dot_updated.pdf", plot = SIZE2, width = 7, height = 6.5)
+ggsave("/Users/icarus2/Documents/Software/R/Tidy Workshop/Git/algalstructure_pub/Results/Figures/SIZE2_dot.pdf", plot = SIZE2, width = 7, height = 6.5)
 
 
 
@@ -1017,7 +1017,7 @@ dotplot_acutal<-annotate_figure(dotplot, bottom = text_grob("Standarized coeffic
 
 
 
-ggsave("/Users/icarus2/Documents/Software/R/Tidy Workshop/Git/algalstructure/Figures/Dotplot/new_dots/dotplot_actual.pdf", plot = dotplot_acutal, width = 10, height = 11)
+ggsave("/Users/icarus2/Documents/Software/R/Tidy Workshop/Git/algalstructure_pub/Results/Figures/dotplot_actual.pdf", plot = dotplot_acutal, width = 10, height = 11)
 
 
 
@@ -1150,7 +1150,7 @@ CHPU_print<-CHPU_ME %>%
   filter(!grepl('Intercept|Site|Tran|Site', term)) %>% 
   filter(!grepl('Residual|Tran_ID', group))
 
-write.csv(CHPU_print,"/Users/icarus2/Documents/Software/R/Tidy Workshop/Git/algalstructure/tables/CHPU.csv",row.names = FALSE)
+write.csv(CHPU_print,"/Users/icarus2/Documents/Software/R/Tidy Workshop/Git/algalstructure_pub/Results/Tables/CHPU.csv",row.names = FALSE)
 
 
 
@@ -1236,7 +1236,7 @@ LYDA_print<-LYDA_ME %>%
   filter(!grepl('Intercept|Site|Tran|Site', term)) %>% 
   filter(!grepl('Residual|Tran_ID', group))
 
-write.csv(LYDA_print,"/Users/icarus2/Documents/Software/R/Tidy Workshop/Git/algalstructure/tables/LYDA.csv",row.names = FALSE)
+write.csv(LYDA_print,"/Users/icarus2/Documents/Software/R/Tidy Workshop/Git/algalstructure_pub/Results/Tables/LYDA.csv",row.names = FALSE)
 
 
 
@@ -1325,7 +1325,7 @@ PACL_print<-PACL_ME %>%
   filter(!grepl('Intercept|Site|Tran|Site', term)) %>% 
   filter(!grepl('Residual|Tran_ID', group))
 
-write.csv(PACL_print,"/Users/icarus2/Documents/Software/R/Tidy Workshop/Git/algalstructure/tables/PACL.csv",row.names = FALSE)
+write.csv(PACL_print,"/Users/icarus2/Documents/Software/R/Tidy Workshop/Git/algalstructure_pub/Results/Tables/PACL.csv",row.names = FALSE)
 
 
 
@@ -1415,7 +1415,7 @@ HYRU_print<-HYRU_ME %>%
   filter(!grepl('Intercept|Site|Tran|Site', term)) %>% 
   filter(!grepl('Residual|Tran_ID', group))
 
-write.csv(HYRU_print,"/Users/icarus2/Documents/Software/R/Tidy Workshop/Git/algalstructure/tables/HYRU.csv",row.names = FALSE)
+write.csv(HYRU_print,"/Users/icarus2/Documents/Software/R/Tidy Workshop/Git/algalstructure_pub/Results/Tables/HYRU.csv",row.names = FALSE)
 
 
 
@@ -1502,7 +1502,7 @@ HASE_print<-HASE_ME %>%
   filter(!grepl('Intercept|Site|Tran|Site', term)) %>% 
   filter(!grepl('Residual|Tran_ID', group))
 
-write.csv(HASE_print,"/Users/icarus2/Documents/Software/R/Tidy Workshop/Git/algalstructure/tables/HASE.csv",row.names = FALSE)
+write.csv(HASE_print,"/Users/icarus2/Documents/Software/R/Tidy Workshop/Git/algalstructure_pub/Results/Tables/HASE.csv",row.names = FALSE)
 
 
 # O. californica ####
@@ -1588,7 +1588,7 @@ OXCA_print<-OXCA_ME %>%
   filter(!grepl('Intercept|Site|Tran|Site', term)) %>% 
   filter(!grepl('Residual|Tran_ID', group))
 
-write.csv(OXCA_print,"/Users/icarus2/Documents/Software/R/Tidy Workshop/Git/algalstructure/tables/OXCA.csv",row.names = FALSE)
+write.csv(OXCA_print,"/Users/icarus2/Documents/Software/R/Tidy Workshop/Git/algalstructure_pub/Results/Tables/OXCA.csv",row.names = FALSE)
 
 
 
@@ -1820,7 +1820,7 @@ summarized_MDS_V2<-summarized_MDS +
   
   
 
-ggsave("/Users/icarus2/Documents/Software/R/Tidy Workshop/Git/algalstructure/Figures/spatiotemporal_MDS.pdf", 
+ggsave("/Users/icarus2/Documents/Software/R/Tidy Workshop/Git/algalstructure_pub/Results/Figures/spatiotemporal_MDS.pdf", 
        plot = summarized_MDS_V2, width = 7.5, height = 5.5)
   
 
@@ -1845,7 +1845,7 @@ cor_matrix<-cor(corr_table)
 col2 = colorRampPalette(c('red', 'white', 'blue'))  
 
 
-pdf(file = "/Users/icarus2/Documents/Software/R/Tidy Workshop/Git/algalstructure/Figures/variable_corrplot_new.pdf")
+pdf(file = "/Users/icarus2/Documents/Software/R/Tidy Workshop/Git/algalstructure_pub/Results/Figures/variable_corrplot.pdf")
 library(corrplot)
 corrplot(cor_matrix, type = "upper", 
          tl.col = "black", 
