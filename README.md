@@ -1,4 +1,4 @@
-# Repository in support of the results in Marine Biology 2022 publication
+# Repository in support of the results in Marine Biology 2022 publication (link XXXX).
 
 Analysis code in /Analysis folder.
 
