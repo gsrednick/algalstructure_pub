@@ -1,0 +1,35 @@
+SpecCode,species,AutoCtr,StockCode,FamCode,PopLWRef,LengthMin,LengthMax,Type,LmaxCompare,EsQ,Number,Sex,a,aTL,b,CoeffDetermination,SEa,SEb,SDa,SDb,LCLa,UCLa,LCLb,UCLb,Method,SpecimenType,Locality,DataRef,C_Code,Comment,Entered,DateEntered,Modified,DateModified,Expert,DateChecked,TS
+3710,Alloclinus holderi,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0.0049,NA,3.09,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+3568,Anisotremus davidsonii,5646,3764,NA,83530,35.6,46.2,TL,NA,NA,4,unsexed,0.0188,NA,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,several L-W pairs with b=3,fresh,Santo Domingo,NA,484,Length type presumably total length.,3,2/10/10,NA,2/11/10,NA,NA,NA
+NA,Apogon guadalupensis,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0.01096,NA,3.09,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+3235,Atherinops affinis,5255,3431,623,59092,4.4,17.7,SL,NA,Yes,198,mixed,0.04,NA,2.5,NA,NA,NA,NA,NA,NA,NA,NA,NA,type I linear regression,fresh,"coastal streams' mouths, northwestern Baja California (32°23'01"" N--30°02'32.5"" N), 1983-97",59092,484,NA,3,12/15/08,65,6/23/15,NA,NA,NA
+4276,Balistes polylepis,42816,4472,NA,118191,5.8,31,TL,NA,NA,101,unsexed,0.042,NA,2.701,0.982,NA,NA,NA,NA,0.034000002,0.050000001,2.63499999,2.76699996,Type I linear regression,NA,Bahia Magdalena-Almejas lagoon system / 2014-2015.,NA,484,NA,65,10/25/19,NA,10/25/19,NA,NA,NA
+3625,Brachyistius frenatus,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0.01349,NA,3.05,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+3539,Caulolatilus princeps,5618,3735,308,40637,62.2,62.2,TL,NA,NA,1,unsexed,0.0239,0.0239,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,single L-W pair with b=3,fresh,NA,NA,NA,L-W relationship calculated from data in Ref. 40637.,3,4/12/02,NA,4/13/02,NA,NA,NA
+3646,Chromis punctipinnis,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0.01479,NA,2.98,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+3628,Embiotoca jacksoni,11226,3824,NA,91739,7.5,22,SL,NA,NA,614,mixed,0.0616,NA,2.8636,0.9629,NA,NA,NA,NA,NA,NA,NA,NA,Type I linear regression,fresh,"southern California, 2004-2005",91739,840,NA,393,11/17/12,NA,11/19/12,NA,NA,NA
+3723,Gibbonsia elegans,40940,3919,NA,115897,1.86,13.18,SL,NA,NA,114,unsexed,0.00857,NA,3.104,0.932,NA,NA,NA,NA,NA,NA,2.946000099,3.260999918,Type I linear regression,fresh,Baja California peninsula / 2006-2008,NA,484,NA,65,9/12/17,NA,9/12/17,NA,NA,NA
+3594,Girella nigricans,40944,3790,NA,115897,2.01,12.87,SL,NA,NA,492,unsexed,0.0151,NA,3.36,0.981,NA,NA,NA,NA,NA,NA,3.319000006,3.401000023,Type I linear regression,fresh,Baja California peninsula / 2006-2008,NA,484,NA,65,9/12/17,NA,9/12/17,NA,NA,NA
+2613,Gymnothorax mordax,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0.00047,NA,3.28,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,Halichoeres semicinctus,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0.01,NA,3.08,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+739,Heterodontus francisci,44073,755,NA,122638,13.5,47.6,TL,NA,NA,22,unsexed,0.006,NA,3.06,0.98,NA,NA,NA,NA,0.003,0.012,2.829999924,3.289999962,type I linear regression,NA,North western coast / 2009-2013.,NA,484,NA,65,8/14/20,NA,8/14/20,NA,NA,NA
+3728,Heterostichus rostratus,41657,3924,NA,117883,NA,NA,TL,NA,NA,NA,mixed,0.00221,NA,3.39,NA,NA,NA,NA,NA,NA,NA,NA,NA,Type I linear regression,fresh,"southern California, 2012-2015",117883,840,NA,3,4/26/18,NA,4/26/18,NA,NA,NA
+3648,Hypsypops rubicundus,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0.02089,NA,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+3885,Lythrypnus dalli,5751,4081,405,59088,0.99,4.82,TL,NA,NA,1106,unsexed,0.00992,NA,2.973,0.9293,NA,0.024,NA,NA,NA,NA,NA,NA,type I linear regression,fresh,"Bahía de La Paz (24°06'-24°48'N; 110°15'-110°39'W), Gulf of California, 2000-2003",59088,484,NA,3,12/10/08,NA,11/3/11,NA,NA,NA
+3889,Lythrypnus zebra,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0.00708,NA,3.09,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+3597,Medialuna californiensis,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0.01122,NA,3.04,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+3670,Oxyjulis californica,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0.00501,NA,3.15,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+3747,Paraclinus integripinnis,40947,3943,NA,115897,1.48,4.74,SL,NA,NA,160,unsexed,0.0146,NA,2.863,0.804,NA,NA,NA,NA,NA,NA,2.640000105,3.085999966,Type I linear regression,fresh,Baja California peninsula / 2006-2008,NA,484,NA,65,9/12/17,NA,9/12/17,NA,NA,NA
+3335,Paralabrax clathratus,5292,3531,289,1242,NA,NA,TL,NA,NA,NA,unsexed,0.00273,0.00273,3.27,NA,NA,NA,NA,NA,NA,NA,NA,NA,type I linear regression,fresh,"Southern California, 20 m",1242,840,NA,3,7/18/96,NA,7/18/96,NA,NA,NA
+3337,Paralabrax nebulifer,5295,3533,289,6323,67,67,TL,NA,NA,1,unsexed,0.01988,0.01988,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,single L-W pair with b=3,fresh,NA,NA,NA,Estimated from data given in Reference.,1,6/17/99,NA,6/17/99,NA,NA,NA
+3639,Rhacochilus toxotes,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0.0195,NA,2.96,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+3640,Rhacochilus vacca,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0.0195,NA,2.96,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+3847,Rhinogobiops nicholsii,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0.01023,NA,3.03,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+3943,Scorpaena guttata,10932,4139,NA,86316,10,26,TL,NA,NA,30,unsexed,0.033,NA,2.996,0.963,NA,NA,NA,NA,NA,NA,2.776000023,3.21600008,Type I linear regression,fresh,Baja California Sur / 2004 - 2006,NA,484,NA,65,8/2/12,NA,8/2/12,NA,NA,NA
+3950,Sebastes atrovirens,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0.00955,NA,3.1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+3951,Sebastes auriculatus,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0.00955,NA,3.1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+4003,Sebastes serriceps,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0.00955,NA,3.1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+3671,Semicossyphus pulcher,5698,3867,362,40637,69.8,76.2,TL,NA,NA,2,unsexed,0.0289,0.0289,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,several L-W pairs with b=3,fresh,NA,NA,NA,L-W relationship calculated from data in Ref. 40637.,3,4/13/02,NA,4/13/02,NA,NA,NA
+382,Seriola lalandi,1660,396,314,771,NA,NA,FL,NA,NA,NA,unsexed,0.0432,0.03121,2.85,NA,NA,NA,NA,NA,NA,NA,NA,NA,type I linear regression,fresh,"Southern California, 33° N 118° W",771,840,NA,3,4/7/96,NA,4/7/96,NA,NA,NA
+3310,Stereolepis gigas,5283,3506,513,6323,226,226,TL,NA,NA,1,unsexed,0.02214,0.02214,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,single L-W pair with b=3,fresh,NA,NA,NA,Estimated from data given in Reference.,1,6/17/99,NA,6/17/99,NA,NA,NA
+NA,Trachurus scombrinus ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0.00977,NA,2.95,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA

@@ -1,0 +1,35 @@
+﻿common_name,species,sizes_present,strata_counted
+ISLAND.KELPFISH       ,Alloclinus holderi,yes,cons
+SARGO                 ,Anisotremus davidsonii,yes,cons
+GUADALUPE.CARDINALFISH ,Apogon guadalupensis,yes,cons
+TOP.SMELT              ,Atherinops affinis,yes,cons
+FINESCALE.TRIGGER     ,Balistes polylepis,yes,cons
+KELP.PERCH            ,Brachyistius frenatus,yes,cons
+WHITEFISH       ,Caulolatilus princeps,yes,cons
+BLACKSMITH             ,Chromis punctipinnis,yes,cons
+BLACK.SURFPERCH        ,Embiotoca jacksoni,yes,cons
+SPOTTED.KELPFISH       ,Gibbonsia elegans,yes,crpytic
+OPAYELE                ,Girella nigricans,yes,cons
+MORAY                  ,Gymnothorax mordax,no,crpytic
+ROCK.WRASSE            ,Halichoeres semicinctus,yes,cons
+HORN.SHARK             ,Heterodontus francisci,yes,cons
+GIANT.KELPFISH         ,Heterostichus rostratus,yes,cons
+GARIBALDI              ,Hypsypops rubicundus,yes,cons
+BLUE.BAND.GOBY ,Lythrypnus dalli,yes,crpytic
+ZEBRA.GOBY             ,Lythrypnus zebra,yes,crpytic
+HALFMOON               ,Medialuna californiensis,yes,cons
+SENORITA.COUNT        ,Oxyjulis californica,yes,cons
+REEF.FINSPOT          ,Paraclinus integripinnis,no,crpytic
+KELP.BASS.COUNT        ,Paralabrax clathratus,yes,cons
+BARRED.SAND.BASS       ,Paralabrax nebulifer,yes,cons
+RUBBERLIP.SURFPERCH    ,Rhacochilus toxotes,yes,cons
+PILE.PERCH             ,Rhacochilus vacca,yes,cons
+BLACKEYE.GOBY          ,Rhinogobiops nicholsii,yes,crpytic
+CA.SCORPIONFISH         ,Scorpaena guttata,yes,cons
+KELP.ROCKFISH          ,Sebastes atrovirens,yes,cons
+BROWN.ROCKFISH        ,Sebastes auriculatus,yes,cons
+TREEFISH               ,Sebastes serriceps,yes,cons
+SHEEPHEAD              ,Semicossyphus pulcher,yes,cons
+YELLOWTAIL             ,Seriola lalandi,yes,cons
+BLACK.SEA.BASS         ,Stereolepis gigas,yes,cons
+AMBERSTRIPE.SHAD       ,Trachurus scombrinus ,yes,cons
