@@ -2,7 +2,7 @@
 
 title: Macroalgal physical structure predicts variation in some attributes of temperate fish assemblages better than macroalgal species composition
 authors: Griffin Srednick and Mark Steele
-doi: 10.1007/s00227-022-04135-7
+doi: [10.1007/s00227-022-04135-7](https://doi.org/10.1007/s00227-022-04135-7)
 
 Analysis code in /Analysis folder.
 - Methods for building predictive relationships between algal height, volume and surface area (algalstructure_R_pub.R)
